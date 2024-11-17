@@ -57,4 +57,10 @@ Write your code in medical_data_visualizer.py. For development, you can use main
 Testing
 The unit tests for this project are in test_module.py. We imported the tests from test_module.py to main.py for your convenience.
 
-Submitting
+## My solution
+
+Here is the catergoric plot by seaborn:
+![image](https://github.com/user-attachments/assets/f2582a15-60f5-419a-839c-4c746d5a387d)
+
+Here is the heatmap:
+![image](https://github.com/user-attachments/assets/5615345b-f8c3-459c-857c-027dc995dc1f)
