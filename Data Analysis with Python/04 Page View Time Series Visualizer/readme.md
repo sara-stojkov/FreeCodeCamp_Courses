@@ -26,3 +26,10 @@ Testing
 The unit tests for this project are in test_module.py. We imported the tests from test_module.py to main.py for your convenience.
 
 ## My solution
+
+![line_plot](https://github.com/user-attachments/assets/c42a60ea-3e17-44e9-be13-a68e5cf9a295)
+![bar_plot](https://github.com/user-attachments/assets/56e2f015-7076-4c06-8533-79d066677b10)
+![box_plot](https://github.com/user-attachments/assets/9bfe4df2-d28c-4fc9-bd42-0f782d92ec2d)
+
+
+
