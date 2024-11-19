@@ -18,7 +18,7 @@ def draw_line_plot():
     # Draw line plot
 
     plt.figure(figsize=(10, 6))
-    plt.plot(df.index, df['value'], label='Page Views', color='b')  # Use 'value' instead of 'int'
+    plt.plot(df.index, df['value'], label='Page Views', color='b')
     plt.title('Daily freeCodeCamp Forum Page Views 5/2016-12/2019')
     plt.xlabel('Date')
     plt.ylabel('Page Views')
@@ -26,7 +26,6 @@ def draw_line_plot():
     plt.xticks(rotation=45)  
     plt.grid(True)
     plt.tight_layout()
-    plt.show()
 
     fig = plt.gcf()  
 
@@ -43,10 +42,13 @@ def draw_bar_plot():
 
     # Draw bar plot
     df_bar.plot(kind='bar', figsize=(12, 6))
+    import calendar
+    df_bar.columns = [calendar.month_name[month] for month in df_bar.columns]
     plt.title('Monthly Average Page Views')
     plt.xlabel('Years')
     plt.ylabel('Average Page Views')
     plt.xticks(rotation=45)
+    plt.legend(title='Month', labels=[calendar.month_name[i] for i in range(1, 13)])
     plt.tight_layout()
 
     fig = plt.gcf()  
@@ -61,11 +63,9 @@ def draw_box_plot():
     df_box = df.copy()
     df_box.reset_index(inplace=True)
 
-    # Create year and month columns
     df_box['year'] = df_box['date'].dt.year
     df_box['month'] = df_box['date'].dt.month_name().str[:3]
     
-    # Create a figure with two subplots (side by side)
     fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(15, 6))
 
     # Plot Year-wise Box Plot (Trend)
@@ -80,16 +80,12 @@ def draw_box_plot():
     ax2.set_xlabel('Month')
     ax2.set_ylabel('Page Views')
 
-    # Set correct month order and rotate labels for the second plot
-    ax2.set_xticks(range(12))  # Set the number of ticks (12 months)
+    ax2.set_xticks(range(12))  
     ax2.set_xticklabels(['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'], rotation=45)
 
-    # Make the layout tight so the plots are not cropped
     plt.tight_layout()
 
-    # Save the figure
     fig.savefig('box_plot.png')
-    plt.show()
 
     return fig
 
