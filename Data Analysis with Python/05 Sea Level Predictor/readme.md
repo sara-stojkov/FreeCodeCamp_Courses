@@ -31,6 +31,5 @@ Global Average Absolute Sea Level Change, 1880-2014 from the US Environmental Pr
 
 ## My solution
 
-![sea_level_plot](https://github.com/user-attachments/assets/6acae21b-6298-488f-8b16-0401c4cb1e6f)
-
+![Figure_1](https://github.com/user-attachments/assets/454cbf15-b731-48ba-856f-58eb66915592)
 
