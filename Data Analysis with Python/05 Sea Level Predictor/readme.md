@@ -2,6 +2,8 @@
 
 This project focuses on the use of _pandas_ and _matplotlib_ as well as _scipy_ to use linear regression for predicting future trends.
 
+The blank project with the starting code can be found [here](https://freecodecam-boilerplate-0mwzkwnfg4w.ws-eu116.gitpod.io/)
+
 ### Official project description from the FCC website:
 
 You will analyze a dataset of the global average sea level change since 1880. You will use the data to predict the sea level change through year 2050.
