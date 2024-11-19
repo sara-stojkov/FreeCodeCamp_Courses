@@ -30,3 +30,7 @@ Data Source
 Global Average Absolute Sea Level Change, 1880-2014 from the US Environmental Protection Agency using data from CSIRO, 2015; NOAA, 2015.
 
 ## My solution
+
+![sea_level_plot](https://github.com/user-attachments/assets/6acae21b-6298-488f-8b16-0401c4cb1e6f)
+
+
